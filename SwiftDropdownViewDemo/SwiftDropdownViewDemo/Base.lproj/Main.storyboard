@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Drop Down View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="JCDropDownViewController" customModule="SwiftDropdownViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-3W-JcE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="okP-E9-jfb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCf-0B-vNA">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.1669951923076923" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-uA-zrZ">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Sb1-iG-2bC"/>
+                                    <constraint firstAttribute="height" constant="30" id="hky-Of-VmX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JCf-0B-vNA" firstAttribute="top" secondItem="rRo-3W-JcE" secondAttribute="bottom" id="Bow-0F-A8w"/>
+                            <constraint firstAttribute="trailing" secondItem="rRo-3W-JcE" secondAttribute="trailing" id="ClV-mw-sdU"/>
+                            <constraint firstItem="JCf-0B-vNA" firstAttribute="top" secondItem="rRo-3W-JcE" secondAttribute="bottom" id="Ipa-8W-40a"/>
+                            <constraint firstItem="fFJ-uA-zrZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TiH-5M-dNU"/>
+                            <constraint firstAttribute="trailing" secondItem="JCf-0B-vNA" secondAttribute="trailing" id="cI9-SP-ks0"/>
+                            <constraint firstItem="fFJ-uA-zrZ" firstAttribute="bottom" secondItem="rRo-3W-JcE" secondAttribute="bottom" constant="15" id="fOX-ID-nKb"/>
+                            <constraint firstItem="JCf-0B-vNA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="h94-Lj-emx"/>
+                            <constraint firstItem="rRo-3W-JcE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="keR-Gx-rYw"/>
+                            <constraint firstItem="rRo-3W-JcE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rx4-kb-hOX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JCf-0B-vNA" secondAttribute="bottom" id="z8S-Dl-UlN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnFoldButton" destination="fFJ-uA-zrZ" id="EjX-Tk-NgF"/>
+                        <outlet property="cnsUpperViewHeight" destination="okP-E9-jfb" id="YTx-ry-uil"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
