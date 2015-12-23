@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A55BD6A1C2A7BC70003F07B /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A55BD691C2A7BC70003F07B /* Header.png */; };
+		5A55BD6C1C2A7CAF0003F07B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55BD6B1C2A7CAF0003F07B /* MapKit.framework */; };
 		5ADB1BA81C29A4F000402243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB1BA71C29A4F000402243 /* AppDelegate.swift */; };
 		5ADB1BAA1C29A4F000402243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB1BA91C29A4F000402243 /* ViewController.swift */; };
 		5ADB1BAD1C29A4F000402243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB1BAB1C29A4F000402243 /* Main.storyboard */; };
 		5ADB1BAF1C29A4F000402243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB1BAE1C29A4F000402243 /* Assets.xcassets */; };
 		5ADB1BB21C29A4F000402243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB1BB01C29A4F000402243 /* LaunchScreen.storyboard */; };
 		5ADB1BBC1C29A6FF00402243 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADB1BBB1C29A6FF00402243 /* Button.png */; };
-		5ADB1BC01C29A82800402243 /* JCDropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADB1BBF1C29A82800402243 /* JCDropDownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A55BD691C2A7BC70003F07B /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = "<group>"; };
+		5A55BD6B1C2A7CAF0003F07B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5ADB1BA41C29A4F000402243 /* SwiftDropdownViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDropdownViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADB1BA71C29A4F000402243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ADB1BA91C29A4F000402243 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +28,6 @@
 		5ADB1BB11C29A4F000402243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ADB1BB31C29A4F000402243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ADB1BBB1C29A6FF00402243 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
-		5ADB1BBF1C29A82800402243 /* JCDropDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCDropDownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A55BD6C1C2A7CAF0003F07B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 		5ADB1B9B1C29A4F000402243 = {
 			isa = PBXGroup;
 			children = (
+				5A55BD6B1C2A7CAF0003F07B /* MapKit.framework */,
 				5ADB1BA61C29A4F000402243 /* SwiftDropdownViewDemo */,
 				5ADB1BA51C29A4F000402243 /* Products */,
 			);
@@ -59,10 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				5ADB1BA71C29A4F000402243 /* AppDelegate.swift */,
-				5ADB1BBF1C29A82800402243 /* JCDropDownViewController.swift */,
 				5ADB1BA91C29A4F000402243 /* ViewController.swift */,
 				5ADB1BAB1C29A4F000402243 /* Main.storyboard */,
 				5ADB1BBB1C29A6FF00402243 /* Button.png */,
+				5A55BD691C2A7BC70003F07B /* Header.png */,
 				5ADB1BAE1C29A4F000402243 /* Assets.xcassets */,
 				5ADB1BB01C29A4F000402243 /* LaunchScreen.storyboard */,
 				5ADB1BB31C29A4F000402243 /* Info.plist */,
@@ -129,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ADB1BB21C29A4F000402243 /* LaunchScreen.storyboard in Resources */,
+				5A55BD6A1C2A7BC70003F07B /* Header.png in Resources */,
 				5ADB1BBC1C29A6FF00402243 /* Button.png in Resources */,
 				5ADB1BAF1C29A4F000402243 /* Assets.xcassets in Resources */,
 				5ADB1BAD1C29A4F000402243 /* Main.storyboard in Resources */,
@@ -144,7 +149,6 @@
 			files = (
 				5ADB1BAA1C29A4F000402243 /* ViewController.swift in Sources */,
 				5ADB1BA81C29A4F000402243 /* AppDelegate.swift in Sources */,
-				5ADB1BC01C29A82800402243 /* JCDropDownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +298,7 @@
 				5ADB1BB81C29A4F000402243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

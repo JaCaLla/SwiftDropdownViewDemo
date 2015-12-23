@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Drop Down View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="JCDropDownViewController" customModule="SwiftDropdownViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftDropdownViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,25 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-3W-JcE">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-3W-JcE" userLabel="Upper view">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header.png" translatesAutoresizingMaskIntoConstraints="NO" id="9by-8U-cQw">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9by-8U-cQw" secondAttribute="trailing" id="11w-oW-2Vo"/>
+                                    <constraint firstAttribute="bottom" secondItem="9by-8U-cQw" secondAttribute="bottom" id="Y2p-Y0-qUe"/>
+                                    <constraint firstItem="9by-8U-cQw" firstAttribute="top" secondItem="rRo-3W-JcE" secondAttribute="top" id="cbs-4k-qnH"/>
                                     <constraint firstAttribute="height" constant="300" id="okP-E9-jfb"/>
+                                    <constraint firstItem="9by-8U-cQw" firstAttribute="leading" secondItem="rRo-3W-JcE" secondAttribute="leading" id="wq7-vr-8Ro"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCf-0B-vNA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCf-0B-vNA" userLabel="Lower view">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IxG-SO-g8D">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                    </mapView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.1669951923076923" colorSpace="calibratedRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-uA-zrZ">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="Sb1-iG-2bC"/>
-                                    <constraint firstAttribute="height" constant="30" id="hky-Of-VmX"/>
+                                    <constraint firstAttribute="bottom" secondItem="IxG-SO-g8D" secondAttribute="bottom" id="0kb-rO-ePQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="IxG-SO-g8D" secondAttribute="trailing" id="3D5-Jc-ZlT"/>
+                                    <constraint firstItem="IxG-SO-g8D" firstAttribute="top" secondItem="JCf-0B-vNA" secondAttribute="top" id="7j6-Tc-djC"/>
+                                    <constraint firstItem="IxG-SO-g8D" firstAttribute="leading" secondItem="JCf-0B-vNA" secondAttribute="leading" id="kQU-aj-kxc"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-uA-zrZ">
+                                <rect key="frame" x="263" y="262" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Sb1-iG-2bC"/>
+                                    <constraint firstAttribute="height" constant="75" id="hky-Of-VmX"/>
+                                </constraints>
+                                <state key="normal" image="Button.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -45,7 +64,7 @@
                             <constraint firstItem="JCf-0B-vNA" firstAttribute="top" secondItem="rRo-3W-JcE" secondAttribute="bottom" id="Ipa-8W-40a"/>
                             <constraint firstItem="fFJ-uA-zrZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TiH-5M-dNU"/>
                             <constraint firstAttribute="trailing" secondItem="JCf-0B-vNA" secondAttribute="trailing" id="cI9-SP-ks0"/>
-                            <constraint firstItem="fFJ-uA-zrZ" firstAttribute="bottom" secondItem="rRo-3W-JcE" secondAttribute="bottom" constant="15" id="fOX-ID-nKb"/>
+                            <constraint firstItem="fFJ-uA-zrZ" firstAttribute="bottom" secondItem="rRo-3W-JcE" secondAttribute="bottom" constant="37" id="fOX-ID-nKb"/>
                             <constraint firstItem="JCf-0B-vNA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="h94-Lj-emx"/>
                             <constraint firstItem="rRo-3W-JcE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="keR-Gx-rYw"/>
                             <constraint firstItem="rRo-3W-JcE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rx4-kb-hOX"/>
@@ -62,4 +81,8 @@
             <point key="canvasLocation" x="305" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button.png" width="100" height="100"/>
+        <image name="Header.png" width="720" height="700"/>
+    </resources>
 </document>
